@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour {
 
     void Start()
     {
+        jump = Vector2.zero;
+
         animator = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
         rigid = GetComponent<Rigidbody2D>();
@@ -27,52 +29,60 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-
-        if(moveHorizontal < 0)
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
-            animator.SetBool("isPlayerMove", true);
-            renderer.flipX = true;
-        }else if(moveHorizontal > 0)
-        {
-            animator.SetBool("isPlayerMove", true);
-            renderer.flipX = false;
-        } else
-        {
-            animator.SetBool("isPlayerMove", false);
+            Debug.Log(jump.x);
+            jump.y = jumpPower;
+            Jump();
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (!isJumping)
         {
-            jump = new Vector2(moveHorizontal, jumpPower);
-            isJumping = true;
+            float moveHorizontal = Input.GetAxis("Horizontal");
+
+            if (Input.GetAxis("Horizontal") != 0)
+            {
+                animator.SetBool("isPlayerMove", true);
+
+                if (moveHorizontal < 0)
+                {
+                    renderer.flipX = true;
+                }
+                else if (moveHorizontal > 0)
+                {
+                    renderer.flipX = false;
+                }
+
+                jump.x = moveHorizontal * 5;
+                Vector2 movement = new Vector2(moveHorizontal, 0);
+
+                _transform.Translate(movement * speed * Time.deltaTime);
+            }
+            else
+            {
+                animator.SetBool("isPlayerMove", false);
+            }
         }
-
-        Vector2 movement = new Vector2(moveHorizontal, 0);
-
-        _transform.Translate(movement * speed * Time.deltaTime);
     }
         
-
-    void FixedUpdate()
+    void OnCollisionEnter2D(Collision2D coll)
     {
-        Jump();
+        if(coll.gameObject.tag == "Background")
+        {
+            isJumping = false;
+            Debug.Log("test");
+            animator.SetBool("isPlayerJump", false);
+        }
     }
-
+   
     void Move()
     {
     }
 
     void Jump()
     {
-        if (!isJumping)
-            return;
-
-        Debug.Log("jump: " + jump);
-
+        isJumping = true;
         rigid.AddForce(jump, ForceMode2D.Impulse);
-        animator.SetTrigger("PlayerJump");
-
-        isJumping = false;
+        animator.SetBool("isPlayerJump", true);
     }
 }

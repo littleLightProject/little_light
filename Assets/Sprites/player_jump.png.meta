@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 01476396be4c9e445ab2c08d6b776d42
-timeCreated: 1502239557
+guid: 34b41d6c4a0fb35419b6d6fe676c0d83
+timeCreated: 1502342822
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -11,17 +11,6 @@ TextureImporter:
     21300008: player_jump_4
     21300010: player_jump_5
     21300012: player_jump_6
-    21300014: player_jump_7
-    21300016: player_jump_8
-    21300018: player_jump_9
-    21300020: player_jump_10
-    21300022: player_jump_11
-    21300024: player_jump_12
-    21300026: player_jump_13
-    21300028: player_jump_14
-    21300030: player_jump_15
-    21300032: player_jump_16
-    21300034: player_jump_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -99,10 +88,10 @@ TextureImporter:
       name: player_jump_0
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 3
-        width: 430
-        height: 489
+        x: 21
+        y: 92
+        width: 541
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,10 +101,10 @@ TextureImporter:
       name: player_jump_1
       rect:
         serializedVersion: 2
-        x: 1799
-        y: 51
-        width: 482
-        height: 417
+        x: 583
+        y: 104
+        width: 585
+        height: 302
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,10 +114,10 @@ TextureImporter:
       name: player_jump_2
       rect:
         serializedVersion: 2
-        x: 3663
-        y: 465
-        width: 6
-        height: 11
+        x: 1265
+        y: 3
+        width: 416
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +127,10 @@ TextureImporter:
       name: player_jump_3
       rect:
         serializedVersion: 2
-        x: 3677
-        y: 463
-        width: 12
-        height: 16
+        x: 1821
+        y: 58
+        width: 459
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +140,10 @@ TextureImporter:
       name: player_jump_4
       rect:
         serializedVersion: 2
-        x: 23
-        y: 91
-        width: 541
-        height: 329
+        x: 2386
+        y: 104
+        width: 500
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +153,10 @@ TextureImporter:
       name: player_jump_5
       rect:
         serializedVersion: 2
-        x: 584
-        y: 103
-        width: 585
-        height: 305
+        x: 2956
+        y: 110
+        width: 532
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,153 +166,10 @@ TextureImporter:
       name: player_jump_6
       rect:
         serializedVersion: 2
-        x: 2335
-        y: 281
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_7
-      rect:
-        serializedVersion: 2
-        x: 2385
-        y: 101
-        width: 502
-        height: 323
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_8
-      rect:
-        serializedVersion: 2
-        x: 2938
-        y: 107
-        width: 550
-        height: 299
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_9
-      rect:
-        serializedVersion: 2
-        x: 3626
-        y: 37
-        width: 319
-        height: 427
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_10
-      rect:
-        serializedVersion: 2
-        x: 1818
-        y: 251
-        width: 16
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_11
-      rect:
-        serializedVersion: 2
-        x: 1743
-        y: 211
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_12
-      rect:
-        serializedVersion: 2
-        x: 2351
-        y: 190
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_13
-      rect:
-        serializedVersion: 2
-        x: 2379
-        y: 197
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_14
-      rect:
-        serializedVersion: 2
-        x: 1241
-        y: 169
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_15
-      rect:
-        serializedVersion: 2
-        x: 1244
-        y: 160
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_16
-      rect:
-        serializedVersion: 2
-        x: 1804
-        y: 137
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_jump_17
-      rect:
-        serializedVersion: 2
-        x: 1237
-        y: 73
-        width: 5
-        height: 5
+        x: 3628
+        y: 41
+        width: 315
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

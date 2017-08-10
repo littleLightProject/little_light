@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("jump: " + jump);
 
         rigid.AddForce(jump, ForceMode2D.Impulse);
+        animator.SetTrigger("PlayerJump");
 
         isJumping = false;
     }
